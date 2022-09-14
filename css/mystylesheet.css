@@ -1,0 +1,133 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAV SECTION */
+
+a{
+    text-decoration: none;
+}
+
+#navbar{
+    background-color: rgb(107, 107, 117);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+
+.navlink{
+    display: flex;
+    gap: 40px;
+}
+
+.navlink a{
+    color: rgb(189, 189, 189);
+}
+
+.request_invite{
+    background-color: rgb(34, 235, 8);
+    color: white;
+    padding: 7px 30px;
+    border-radius: 50px;
+}
+
+#next{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+
+#next div{
+    width: 40%;
+}
+
+#next img{
+    width: 50%;
+}
+
+#next h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+}
+
+#next p{
+    margin: 20px 0;
+    font-size: 13px;
+    font-weight: none;
+}
+
+#about{
+    background-color: hsl(222, 33%, 94%);
+    padding: 10px 60px;
+}
+
+.aboutBoxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.aboutBoxes div{
+    padding: 20px;
+    margin: 10px;
+}
+
+.aboutword{
+    width: 40%;
+}
+
+.aboutword h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+}
+
+.aboutword p{
+    margin: 20px 0;
+    font-size: 13px;
+    font-weight: none;
+}
+
+.aboutBoxes h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(233, 26%, 24%);
+}
+
+.aboutBoxes p{
+    font-size: 13px;
+    font-weight: none;
+}
+
+#servi_one{
+    padding: 10px 60px;
+}
+
+.serviBoxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.serviBoxes div{
+    padding: 10px;
+    margin: 5px;
+}
+
+.serviBoxes div img{
+    width: 270px;
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+}
+
+.serviBoxes p{
+    font-size: 14px;
+    font-weight: none;
+}
