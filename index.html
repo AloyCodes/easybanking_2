@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/css/mystylesheet.css">
 </head>
 <body>
@@ -12,14 +13,14 @@
     <!-- NAV BAR SECTION -->
 
     <section id="navbar">
-            <a href="">
+            <a href="/">
                 <img src="/images/logo.svg" alt="">
             </a>
         <div class="navlink">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="#servi_one">Blog</a>
+            <a href="#foot">Contact</a>
         </div>
             <a href="" class="request_invite">Request Invite</a>
     </section>
@@ -33,7 +34,7 @@
                 Take your financial life online. Your easybank account will 
                 be a one-stop-shop for spending, saving, budgeting, investing, and much more.
             </p>
-            <a href="" class="request_invite">Request Invite</a>
+            <a href="#" class="request_invite">Request Invite</a>
         </div>
         <img src="/images/image-mockups.png" alt="">
     </section>
@@ -49,7 +50,7 @@
             </p>
         </div>
         <div class="aboutBoxes">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
                 <img src="/images/icon-online.svg" alt="">
                 <h3>Online Banking</h3>
                 <p>
@@ -57,7 +58,7 @@
                     finances wherever you are in the world.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
                 <img src="/images/icon-budgeting.svg" alt="">
                 <h3>Simple Budgeting</h3>
                 <p>
@@ -65,7 +66,7 @@
                     finances wherever you are in the world.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="300">
                 <img src="/images/icon-onboarding.svg" alt="">
                 <h3>Fast Onboarding</h3>
                 <p>
@@ -73,7 +74,7 @@
                     finances wherever you are in the world.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="400">
                 <img src="/images/icon-api.svg" alt="">
                 <h3>Open API</h3>
                 <p>
@@ -87,30 +88,102 @@
     <!-- SERVICE SECTION -->
 
     <section id="servi_one">
-        <h1></h1>
+        <h1>Latest Articles</h1>
         <div class="serviBoxes">
-            <div>
+            <div class="services">
                 <img src="/images/image-currency.jpg" alt="currency image">
-                <h3></h3>
-                <p></p>
+                <div class="serviceinfo">
+                    <h3>By Claire Robinson</h3>
+                    <a href="#">Recieve Money in any Currency with no Fee</a>
+                    <p>
+                        The world is getting smaller and we're becoming more mobile. 
+                        So why should you be forced to only receive money in a single …
+                    </p>
+                </div>
             </div>
-            <div>
+            <div class="services">
                 <img src="/images/image-restaurant.jpg" alt="">
-                <h3></h3>
-                <p></p>
+                <div class="serviceinfo">
+                    <h3>By Wilson Hutton</h3>
+                    <a href="#">Treat Youself without Worrying about Money</a>
+                    <p>
+                        Our simple budgeting feature allows you to separate out your 
+                        spending and set realistic limits each month. That means you …
+                    </p>
+                </div>
             </div>
-            <div>
+            <div class="services">
                 <img src="/images/image-plane.jpg" alt="">
-                <h3></h3>
-                <p></p>
+                <div class="serviceinfo">
+                    <h3>By Wilson Hutton</h3>
+                    <a href="#">Take Your EasyBank Card Anywhere You Go</a>
+                    <p>
+                        We want you to enjoy your travels. This is why we don't charge 
+                        any fees on purchases while you're abroad. We'll even show you …
+                    </p>
+                </div>
             </div>
            
-            <div>
+            <div class="services">
                 <img src="/images/image-confetti.jpg" alt="">
-                <h3></h3>
-                <p></p>
+                <div class="serviceinfo">
+                    <h3>By Claire Robinson</h3>
+                    <a href="#">Our Invite-only Beta Accounts are now live</a>
+                    <p>
+                        After a lot of hard work by the whole team, we're excited to launch 
+                        our closed beta. It's easy to request an invite through the site ...
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- FOOTER SECTION -->
+
+    <section id="foot">
+        <div class="footsocials">
+            <a href="#">
+                <img src="/images/logo.svg" alt="">
+            </a>
+            <div class="socials">
+                <a href="#">
+                    <img src="/images/icon-facebook.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="/images/icon-instagram.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="/images/icon-pinterest.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="/images/icon-twitter.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="/images/icon-youtube.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footnav">
+            <div class="footnav_1">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footnav_2">
+                <a href="#">Careers</a>
+                <a href="#">Support</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+       <div class="footlink">
+            <a href="#" class="request_invite">Request Invite</a>
+            <div class="footlink_1">
+                &copy; EasyBank. All Rights Reserved.
+            </div>
+       </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

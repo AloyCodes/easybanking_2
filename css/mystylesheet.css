@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html,body{
+    scroll-behavior: smooth;
+}
+
 /* NAV SECTION */
 
 a{
@@ -15,7 +19,7 @@ a{
 }
 
 #navbar{
-    background-color: rgb(107, 107, 117);
+    background-color: rgb(52, 52, 70);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,12 +32,13 @@ a{
 }
 
 .navlink a{
-    color: rgb(189, 189, 189);
+    color: rgb(216, 213, 213);
 }
 
 .request_invite{
-    background-color: rgb(34, 235, 8);
+    background-color: rgb(26, 131, 12);
     color: white;
+    font-size: 12px;
     padding: 7px 30px;
     border-radius: 50px;
 }
@@ -54,34 +59,37 @@ a{
 }
 
 #next h1{
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 400;
     color: hsl(233, 26%, 24%);
 }
 
 #next p{
     margin: 20px 0;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: none;
 }
 
 #about{
     background-color: hsl(222, 33%, 94%);
-    padding: 10px 60px;
+    padding: 60px;
+    margin-top: 5rem;
 }
 
 .aboutBoxes{
     display: grid;
+    gap: 30px;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .aboutBoxes div{
     padding: 20px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .aboutword{
     width: 40%;
+    margin-left: 20px;
 }
 
 .aboutword h1{
@@ -92,7 +100,7 @@ a{
 
 .aboutword p{
     margin: 20px 0;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: none;
 }
 
@@ -103,31 +111,100 @@ a{
 }
 
 .aboutBoxes p{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: none;
 }
 
 #servi_one{
     padding: 10px 60px;
+    margin-left: 25px;
+    margin-top: 5rem;
+}
+
+#servi_one h1{
+    font-size: 25px;
+    font-weight: 400;
+    color: hsl(240, 2%, 67%);
+    margin: 30px 0;
 }
 
 .serviBoxes{
     display: grid;
+    gap: 30px;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.serviBoxes div{
-    padding: 10px;
-    margin: 5px;
+.services{
+    box-shadow: 5px 5px 10px rgb(219, 219, 219);
 }
 
-.serviBoxes div img{
-    width: 270px;
+.serviBoxes img{
+    width: 100%;
     height: 150px;
     border-radius: 8px 8px 0 0;
 }
 
-.serviBoxes p{
-    font-size: 14px;
+.serviceinfo{
+    padding: 20px;
+}
+
+.serviceinfo h3{
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    margin-bottom: 15px;
+}
+
+.serviceinfo a{
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(202, 42%, 9%);
+}
+
+.serviceinfo a:hover{
+    color: green;
+}
+
+.serviceinfo p{
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    margin-top: 15px;
     font-weight: none;
+}
+
+#foot{
+    background-color: rgb(52, 52, 70);
+    padding: 40px 60px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.socials {
+    padding: 20px 0;
+}
+
+.socials a{
+    margin: 0 7px;
+}
+
+.footnav{
+    display: flex;
+    gap: 200px;
+}
+
+.footnav_1 a, .footnav_2 a{
+    display: list-item;
+    margin: 10px 0;
+    list-style: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footlink_1{
+    margin-top: 20px;
+    color: white;
+    font-size: 11px;
 }
