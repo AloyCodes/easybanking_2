@@ -1,3 +1,63 @@
+const nav = document.querySelector(".navlink")
+const navOpen = document.querySelector(".ri-menu-fill")
+const navClose = document.querySelector(".ri-close-fill")
+const html = document.querySelector('html')
+const navLinks = document.querySelectorAll(".navlink a")
+
+console.log(navLinks)
+
+function menuOpen(){
+  nav.style.top = "35%"
+  navOpen.style.display = "none"
+  navClose.style.display = "block"
+  html.style.overflowY = "hidden"
+}
+
+
+function menuClose(){
+  nav.style.top = "-35%"
+  navOpen.style.display = "block"
+  navClose.style.display = "none"
+  html.style.overflowY = "scroll"
+}
+
+
+navLinks.forEach(function(navLink) {
+  navLink.addEventListener("click", function(){
+    nav.style.top = "-35%"
+    navOpen.style.display = "block"
+    navClose.style.display = "none"
+    html.style.overflowY = "scroll"
+  })
+})
+
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+
+
+
+
+
 AOS.init();
 
 // You can also pass an optional settings object
